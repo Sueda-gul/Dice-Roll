@@ -10,8 +10,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val rollButton: Button = findViewById(R.id.button)
         rollButton.setOnClickListener { sallaZari() }
+        var zarGöster1: ImageView = findViewById(R.id.imageView)
+        var zarGöster2: ImageView = findViewById(R.id.imageView4)
+        zarGöster1.setImageResource(R.drawable.dice_0)
+        zarGöster2.setImageResource(R.drawable.dice_0)
+
     }
     /** Zar atılır ve sonucu ekrana günceller.*/
     private fun sallaZari() {
